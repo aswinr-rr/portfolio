@@ -543,11 +543,11 @@
         <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 180px; height: 180px; font-size: 70px; margin: 0 10px; border-radius: 50%; background-color: #efefef; color: #333; text-decoration: none; transition: transform 0.3s ease;">
             <i class="fab fa-youtube"></i>
         </a>
-        <div style="display: none; position: absolute; top: 190px; left: 50%; transform: translateX(-50%); background-color: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-            <a href="https://www.youtube.com/watch?v=video1" target="_blank" style="display: block; padding: 8px 12px; text-decoration: none; color: #333; transition: background-color 0.2s ease;">Video 1</a>
-            <a href="https://www.youtube.com/watch?v=video2" target="_blank" style="display: block; padding: 8px 12px; text-decoration: none; color: #333; transition: background-color 0.2s ease;">Video 2</a>
-            <a href="https://www.youtube.com/watch?v=video3" target="_blank" style="display: block; padding: 8px 12px; text-decoration: none; color: #333; transition: background-color 0.2s ease;">Video 3</a>
-            <a href="https://www.youtube.com/watch?v=video4" target="_blank" style="display: block; padding: 8px 12px; text-decoration: none; color: #333; transition: background-color 0.2s ease;">Video 4</a>
+        <div style="display: none; position: absolute; top: 190px; left: 50%; transform: translateX(-50%); background-color: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: left;">
+            <a href="https://youtube.com/shorts/FwnPHqdsd2k?si=SoI9vs66TgzYp4jX" target="_blank" style="display: block; padding: 10px; text-decoration: none; color: #333; transition: background-color 0.2s ease;">Video 1</a>
+            <a href="https://youtube.com/shorts/CTwoxXfoBL0?si=mpL94asUi9mP0Ea6" target="_blank" style="display: block; padding: 10px; text-decoration: none; color: #333; transition: background-color 0.2s ease;">Video 2</a>
+            <a href="https://youtube.com/shorts/oZeVBtyC6KU?si=NiaHMciVc_iCW2Vq" target="_blank" style="display: block; padding: 10px; text-decoration: none; color: #333; transition: background-color 0.2s ease;">Video 3</a>
+            <a href="https://youtube.com/shorts/tQmw7ul6Vyk?si=7pNLpW9AJyJ1mvcn" target="_blank" style="display: block; padding: 10px; text-decoration: none; color: #333; transition: background-color 0.2s ease;">Video 4</a>
         </div>
     </div>
 </div>
@@ -563,11 +563,12 @@
     });
 
     document.addEventListener('click', (e) => {
-        if (!youtubeIcon.contains(e.target)) {
+        if (!youtubeIcon.contains(e.target) && !dropdownMenu.contains(e.target)) {
             dropdownMenu.style.display = 'none';
         }
     });
 </script>
+
 
         
     
